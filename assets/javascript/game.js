@@ -46,6 +46,9 @@ $(document).ready(function() {
         $("#display").html("<div id='start-screen'><div id='start'>Start</div></div>");
         $("#start").on("click", function() {
             questionsScreen();
+            amountCorrect = 0;
+            amountWrong = 0;
+            unanswered = 0;
         });
     };
 
