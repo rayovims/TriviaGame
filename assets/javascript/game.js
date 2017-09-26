@@ -90,11 +90,10 @@ $(document).ready(function() {
             startScreen();
         });
     };
-    var clear;
+    var questionTime;
 
     function timer() {
-        var questionTime = setInterval(function() {
-            clear = questionTime;
+        questionTime = setInterval(function() {
             time--;
             $("#time").html(time);
             if (time === 0) {
@@ -130,7 +129,7 @@ $(document).ready(function() {
         }
 
         $("#container").on("click", ".selection", function() {
-            clearInterval(clear);
+            clearInterval(questionTime);
             var answerIndex = ($(this).data("answer-index"));
             number++;
 
