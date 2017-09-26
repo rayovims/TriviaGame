@@ -7,7 +7,7 @@ var time = 30;
 
 questions[0] = {
     question: "How many public classes can you have delcared in one program",
-    answers: ["1", "2", "3", "4"],
+    answers: ["1", "2", "3", "infinite"],
     correctIndex: 0,
 };
 
